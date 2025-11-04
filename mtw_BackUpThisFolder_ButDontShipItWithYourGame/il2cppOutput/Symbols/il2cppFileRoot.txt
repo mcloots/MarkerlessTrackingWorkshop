@@ -1,0 +1,1 @@
+C:\tmp\Unity\MarkerlessTrackingWorkshop\Library\Bee\artifacts\Android\il2cppOutput\cpp
