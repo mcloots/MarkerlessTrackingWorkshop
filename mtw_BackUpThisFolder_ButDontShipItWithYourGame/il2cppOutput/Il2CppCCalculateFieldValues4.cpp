@@ -14,6 +14,7 @@ struct Action_3_t4730167C8E7EB19F1E0034580790A915D549F6CB;
 struct Func_2_t880CA675AE5D39E081BEEF14DC092D82674DE4F2;
 struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031;
 struct CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB;
+struct RendererU5BU5D_t32FDD782F67917B2291EA4FF242719877440A02A;
 struct SectionU5BU5D_t9D3017555FFF42E71BE91904A2486EAF429F24C4;
 struct Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07;
 struct CancellationTokenSource_tAAE1E0033BCFC233801F8CB4CED5C852B350CB7B;
@@ -240,7 +241,7 @@ struct __StaticArrayInitTypeSizeU3D127_t86E43879CB97D960BC2B6999B32D3B501F44C323
 };
 #pragma pack(pop, tp)
 #pragma pack(push, tp, 1)
-struct __StaticArrayInitTypeSizeU3D78_tFACA1F1448A4ED8E76812B4AC3C6536BAB042A3B 
+struct __StaticArrayInitTypeSizeU3D87_t91517ACD6B63945286773495D41159908D1361D0 
 {
 	union
 	{
@@ -250,7 +251,7 @@ struct __StaticArrayInitTypeSizeU3D78_tFACA1F1448A4ED8E76812B4AC3C6536BAB042A3B
 			{
 			};
 		};
-		uint8_t __StaticArrayInitTypeSizeU3D78_tFACA1F1448A4ED8E76812B4AC3C6536BAB042A3B__padding[78];
+		uint8_t __StaticArrayInitTypeSizeU3D87_t91517ACD6B63945286773495D41159908D1361D0__padding[87];
 	};
 };
 #pragma pack(pop, tp)
@@ -733,18 +734,22 @@ struct MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71  : public Behavio
 {
 	CancellationTokenSource_tAAE1E0033BCFC233801F8CB4CED5C852B350CB7B* ___m_CancellationTokenSource;
 };
-struct ButtonScaleController_tED0E157B1245673B4D8031BB889BC1E9A811A5E5  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+struct ButtonScaleAndRotateController_tCAB2ACFDD7F5B98912C718A6E6CA8C6A0D6FE779  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
 	float ___scaleStep;
 	float ___minimumScale;
 	float ___maximumScale;
+	float ___rotationStep;
+	bool ___useBoundsCenter;
+	bool ___lockPivotHeight;
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____initialScale;
 	float ____currentScaleMultiplier;
+	RendererU5BU5D_t32FDD782F67917B2291EA4FF242719877440A02A* ____renderers;
 };
 struct U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA_StaticFields
 {
 	__StaticArrayInitTypeSizeU3D127_t86E43879CB97D960BC2B6999B32D3B501F44C323 ___7380A8B60D7098D44CCA17F1E672AFD1C6056FF8A4E67A0A5A322FB898CCC48D;
-	__StaticArrayInitTypeSizeU3D78_tFACA1F1448A4ED8E76812B4AC3C6536BAB042A3B ___EEA903B5C766C0EB6B143DC53072B9FF28015283334A5701D2C865D855258CEA;
+	__StaticArrayInitTypeSizeU3D87_t91517ACD6B63945286773495D41159908D1361D0 ___D85E5BFF4421F93716543C30BFFB41E08255418D6B378C2C52741505BBB243A6;
 };
 struct U3CPrivateImplementationDetailsU3E_t56B11D653DDDDCE1FB62511C9112308EE5C13DF6_StaticFields
 {
@@ -916,9 +921,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable12059[6] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable12063[2] = 
 {
 	static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t4CD66A162F5D953B7D54B787725E07B4A495919B_StaticFields, ___123D3E8E04779785BA69FEB4A59F28EB8BED2ED37FE09128C70513E45B455E09)),static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t4CD66A162F5D953B7D54B787725E07B4A495919B_StaticFields, ___685D33E36DBAAACD58F4B35441F9B70BB1F802DA5A24F6C4FBBFD56AB33E8AEC)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable12065[5] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable12065[9] = 
 {
-	static_cast<int32_t>(offsetof(ButtonScaleController_tED0E157B1245673B4D8031BB889BC1E9A811A5E5, ___scaleStep)),static_cast<int32_t>(offsetof(ButtonScaleController_tED0E157B1245673B4D8031BB889BC1E9A811A5E5, ___minimumScale)),static_cast<int32_t>(offsetof(ButtonScaleController_tED0E157B1245673B4D8031BB889BC1E9A811A5E5, ___maximumScale)),static_cast<int32_t>(offsetof(ButtonScaleController_tED0E157B1245673B4D8031BB889BC1E9A811A5E5, ____initialScale)),static_cast<int32_t>(offsetof(ButtonScaleController_tED0E157B1245673B4D8031BB889BC1E9A811A5E5, ____currentScaleMultiplier)),};
+	static_cast<int32_t>(offsetof(ButtonScaleAndRotateController_tCAB2ACFDD7F5B98912C718A6E6CA8C6A0D6FE779, ___scaleStep)),static_cast<int32_t>(offsetof(ButtonScaleAndRotateController_tCAB2ACFDD7F5B98912C718A6E6CA8C6A0D6FE779, ___minimumScale)),static_cast<int32_t>(offsetof(ButtonScaleAndRotateController_tCAB2ACFDD7F5B98912C718A6E6CA8C6A0D6FE779, ___maximumScale)),static_cast<int32_t>(offsetof(ButtonScaleAndRotateController_tCAB2ACFDD7F5B98912C718A6E6CA8C6A0D6FE779, ___rotationStep)),static_cast<int32_t>(offsetof(ButtonScaleAndRotateController_tCAB2ACFDD7F5B98912C718A6E6CA8C6A0D6FE779, ___useBoundsCenter)),static_cast<int32_t>(offsetof(ButtonScaleAndRotateController_tCAB2ACFDD7F5B98912C718A6E6CA8C6A0D6FE779, ___lockPivotHeight)),static_cast<int32_t>(offsetof(ButtonScaleAndRotateController_tCAB2ACFDD7F5B98912C718A6E6CA8C6A0D6FE779, ____initialScale)),static_cast<int32_t>(offsetof(ButtonScaleAndRotateController_tCAB2ACFDD7F5B98912C718A6E6CA8C6A0D6FE779, ____currentScaleMultiplier)),static_cast<int32_t>(offsetof(ButtonScaleAndRotateController_tCAB2ACFDD7F5B98912C718A6E6CA8C6A0D6FE779, ____renderers)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable12066[4] = 
 {
 	static_cast<int32_t>(offsetof(Section_t50C894D0A717C2368EBAAE5477D4E8626D0B5401, ___heading)),static_cast<int32_t>(offsetof(Section_t50C894D0A717C2368EBAAE5477D4E8626D0B5401, ___text)),static_cast<int32_t>(offsetof(Section_t50C894D0A717C2368EBAAE5477D4E8626D0B5401, ___linkText)),static_cast<int32_t>(offsetof(Section_t50C894D0A717C2368EBAAE5477D4E8626D0B5401, ___url)),};
@@ -933,7 +938,7 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable12069[5] =
 	static_cast<int32_t>(offsetof(MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E, ___FilePathsData)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E, ___TypesData)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E, ___TotalTypes)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E, ___TotalFiles)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E, ___IsEditorOnly)) + static_cast<int32_t>(sizeof(RuntimeObject)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable12073[2] = 
 {
-	static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA_StaticFields, ___7380A8B60D7098D44CCA17F1E672AFD1C6056FF8A4E67A0A5A322FB898CCC48D)),static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA_StaticFields, ___EEA903B5C766C0EB6B143DC53072B9FF28015283334A5701D2C865D855258CEA)),};
+	static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA_StaticFields, ___7380A8B60D7098D44CCA17F1E672AFD1C6056FF8A4E67A0A5A322FB898CCC48D)),static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA_StaticFields, ___D85E5BFF4421F93716543C30BFFB41E08255418D6B378C2C52741505BBB243A6)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable12075[1] = 
 {
 	static_cast<int32_t>(offsetof(DataContractAttribute_tD065D7D14CC8AA548815166AB8B8210D1B3C699F, ___isReference)),};

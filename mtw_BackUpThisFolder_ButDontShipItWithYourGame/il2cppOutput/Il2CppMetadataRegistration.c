@@ -23,7 +23,7 @@ const Il2CppMetadataRegistration g_MetadataRegistration =
 	g_Il2CppGenericInstTable,
 	116944,
 	g_Il2CppGenericMethodFunctions,
-	42430,
+	42431,
 	g_Il2CppTypeTable,
 	135363,
 	g_Il2CppMethodSpecTable,

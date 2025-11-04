@@ -7,22 +7,30 @@
 
 
 
-extern void ButtonScaleController_Awake_mF7D13A262840EBE917980CD3F6CA461D66D65666 (void);
-extern void ButtonScaleController_ScaleUp_m7365294670057DCFDB2A6FB1496102D08EFD7E07 (void);
-extern void ButtonScaleController_ScaleDown_m022E1D85FF2CA13E4EAB80A5F1AB4B861462E31D (void);
-extern void ButtonScaleController__ctor_mC0A311845DDEA3FB3122BCA5897E08B43A9E6E6D (void);
+extern void ButtonScaleAndRotateController_Awake_m12BEC464BE5974D578BCA738520D4F10EEA5F660 (void);
+extern void ButtonScaleAndRotateController_ScaleUp_mAA233CF3A88163D4F14DEF2C36E0DCA87E0B4443 (void);
+extern void ButtonScaleAndRotateController_ScaleDown_m43A4F303BF4D8AAE86EB50F0CA8D437C3E751975 (void);
+extern void ButtonScaleAndRotateController_RotateLeft_m8C39D1C2F6DBD86CE232D259836C161DAF5D49FC (void);
+extern void ButtonScaleAndRotateController_RotateRight_mFB66D4D27921FB5C84666AA45E060EFDB0FA4C0E (void);
+extern void ButtonScaleAndRotateController_Spin_m71CAE2A546DE745B244ECB8DB336D6AC8D34B874 (void);
+extern void ButtonScaleAndRotateController_GetSpinPivot_m27F86F2C747DE997E62379FCDF2C9BC022D7E54C (void);
+extern void ButtonScaleAndRotateController__ctor_m8355BC64F393B688FE84359FCDC460FA48A1BE9C (void);
 extern void Readme__ctor_m69C325C4C171DCB0312B646A9034AA91EA8C39C6 (void);
 extern void Section__ctor_m5F732533E4DFC0167D965E5F5DB332E46055399B (void);
 extern void VuforiaLicense_GetLicenseKey_m796D51E5EF1C53F3D62BA4EA8806AC1FB1A5E3C4 (void);
 extern void VuforiaLicense__ctor_m094B92B3323DFFD79ADB696474D5D158C95E291B (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
-static Il2CppMethodPointer s_methodPointers[10] = 
+static Il2CppMethodPointer s_methodPointers[14] = 
 {
-	ButtonScaleController_Awake_mF7D13A262840EBE917980CD3F6CA461D66D65666,
-	ButtonScaleController_ScaleUp_m7365294670057DCFDB2A6FB1496102D08EFD7E07,
-	ButtonScaleController_ScaleDown_m022E1D85FF2CA13E4EAB80A5F1AB4B861462E31D,
-	ButtonScaleController__ctor_mC0A311845DDEA3FB3122BCA5897E08B43A9E6E6D,
+	ButtonScaleAndRotateController_Awake_m12BEC464BE5974D578BCA738520D4F10EEA5F660,
+	ButtonScaleAndRotateController_ScaleUp_mAA233CF3A88163D4F14DEF2C36E0DCA87E0B4443,
+	ButtonScaleAndRotateController_ScaleDown_m43A4F303BF4D8AAE86EB50F0CA8D437C3E751975,
+	ButtonScaleAndRotateController_RotateLeft_m8C39D1C2F6DBD86CE232D259836C161DAF5D49FC,
+	ButtonScaleAndRotateController_RotateRight_mFB66D4D27921FB5C84666AA45E060EFDB0FA4C0E,
+	ButtonScaleAndRotateController_Spin_m71CAE2A546DE745B244ECB8DB336D6AC8D34B874,
+	ButtonScaleAndRotateController_GetSpinPivot_m27F86F2C747DE997E62379FCDF2C9BC022D7E54C,
+	ButtonScaleAndRotateController__ctor_m8355BC64F393B688FE84359FCDC460FA48A1BE9C,
 	Readme__ctor_m69C325C4C171DCB0312B646A9034AA91EA8C39C6,
 	Section__ctor_m5F732533E4DFC0167D965E5F5DB332E46055399B,
 	VuforiaLicense_GetLicenseKey_m796D51E5EF1C53F3D62BA4EA8806AC1FB1A5E3C4,
@@ -30,24 +38,28 @@ static Il2CppMethodPointer s_methodPointers[10] =
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 };
-static const int32_t s_InvokerIndices[10] = 
+static const int32_t s_InvokerIndices[14] = 
 {
 	14551,
 	14551,
 	14551,
 	14551,
 	14551,
+	11145,
+	14540,
 	14551,
-	24792,
 	14551,
-	24910,
+	14551,
+	24793,
+	14551,
+	24911,
 	14551,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	10,
+	14,
 	s_methodPointers,
 	0,
 	NULL,
