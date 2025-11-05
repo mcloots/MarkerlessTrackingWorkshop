@@ -61,7 +61,6 @@ public class ButtonScaleAndRotateController : MonoBehaviour
     private void Spin(float deltaDeg)
     {
         Vector3 pivot = GetSpinPivot();
-        // Wereld-verticale as (als een tafel op de vloer)
         Vector3 axis = Vector3.up;
         transform.RotateAround(pivot, axis, deltaDeg);
     }
